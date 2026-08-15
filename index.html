@@ -53,12 +53,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BuildWeb.loader.js";
+      var buildVersion = "20260815_083726";
+      var loaderUrl = buildUrl + "/BuildWeb.loader.js?v=" + buildVersion;
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/BuildWeb.data",
-        frameworkUrl: buildUrl + "/BuildWeb.framework.js",
-        codeUrl: buildUrl + "/BuildWeb.wasm",
+        dataUrl: buildUrl + "/BuildWeb.data?v=" + buildVersion,
+        frameworkUrl: buildUrl + "/BuildWeb.framework.js?v=" + buildVersion,
+        codeUrl: buildUrl + "/BuildWeb.wasm?v=" + buildVersion,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Top_Down_Multi",
         productName: "Top_Down_Multi",
